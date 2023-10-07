@@ -9,7 +9,7 @@ const ServicesCard = ({ services }) => {
     return (
         <div>
             <div className="card bg-base-100 shadow-xl">
-                <figure className="px-10 pt-10">
+                <figure >
                     <img src={service_img} alt={service_title} className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">

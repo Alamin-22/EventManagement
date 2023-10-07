@@ -20,7 +20,7 @@ const Navbar = () => {
                             {NavLinks}
                         </ul>
                     </div>
-                    <p className=" text-sm md:text-2xl font-bold">The <span className="text-purple-400">P</span>laning<span className="text-purple-400">Paradise</span></p>
+                    <p className=" text-sm md:text-2xl font-bold">The <span className="text-purple-400">P</span>laning <span className="text-purple-400">Paradise</span></p>
                 </div>
                     {/* <img className="lg:hidden" src="https://i.ibb.co/Km7S4fg/event.png" alt="" /> */}
                 <div className="navbar-center hidden lg:flex">

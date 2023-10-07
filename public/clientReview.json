@@ -1,0 +1,201 @@
+[
+    {
+        "name": "John Smith",
+        "img": "john_smith.jpg",
+        "feedback": "I had an amazing time at the festival party organized by this team. The music, food, and atmosphere were fantastic!",
+        "rating": 5
+    },
+    {
+        "name": "Alice Johnson",
+        "img": "alice_johnson.jpg",
+        "feedback": "The festival was a blast! The organizers did an excellent job, and I can't wait to attend the next one.",
+        "rating": 4
+    },
+    {
+        "name": "Michael Davis",
+        "img": "michael_davis.jpg",
+        "feedback": "I've been to many festivals, but this one stood out. Great job on the event planning and execution!",
+        "rating": 5
+    },
+    {
+        "name": "Emily Wilson",
+        "img": "emily_wilson.jpg",
+        "feedback": "The festival party exceeded my expectations. The decorations were stunning, and the entertainment was top-notch.",
+        "rating": 4
+    }
+]
+
+
+
+[
+    {
+        "service_id": 1,
+        "service_title": "Venue Selection",
+        "service_price": 50.00,
+        "service_img": "https://i.ibb.co/C7gQTVt/Venu.jpg",
+        "service_description": "Choosing the right venue is crucial to the success of your event. Our experienced party planners will work closely with you to select the perfect venue that suits your event's needs and vision. Whether you're planning a wedding, corporate conference, or a milestone birthday party, we'll ensure that the venue sets the stage for a memorable celebration. We take care of every detail, from evaluating available spaces to negotiating contracts and managing logistics, to provide you with the ideal setting for your event."
+    },
+    {
+        "service_id": 2,
+        "service_title": "Decoration Setup",
+        "service_price": 150.00,
+        "service_img": "https://i.ibb.co/GnWfQTg/decoration.jpg",
+        "service_description": "Transform your venue into a stunning and enchanting space with our decoration setup service. Our talented decorators will bring your vision to life, ensuring that every corner is adorned with beautiful and creative decor that matches your chosen theme. From elegant floral arrangements to eye-catching centerpieces, our decorators will create a magical ambiance that wows your guests."
+    },
+    {
+        "service_id": 3,
+        "service_title": "Cake and Catering",
+        "service_price": 200.00,
+        "service_img": "https://i.ibb.co/0VXSpKK/cake.jpg",
+        "service_description": "Indulge your guests with delicious culinary delights. Our expert chefs and bakers will craft mouthwatering cakes, savory dishes, and sweet treats that cater to every palate. From elegant cakes to gourmet meals, we ensure that your guests leave with satisfied taste buds and happy memories. Our catering service includes a variety of menu options, and we can accommodate dietary preferences and restrictions."
+    },
+    {
+        "service_id": 4,
+        "service_title": "Entertainment",
+        "service_price": 100.00,
+        "service_img": "https://i.ibb.co/vdW3sL8/siingers.jpg",
+        "service_description": "Keep the excitement going with our entertainment services. From professional magicians and talented clowns to live bands and interactive games, we have a wide range of entertainment options to engage guests of all ages. Let us add that extra touch of magic and fun to your party. Our entertainers are experienced in captivating audiences and ensuring everyone has a fantastic time."
+    },
+    {
+        "service_id": 6,
+        "service_title": "Photography and Videography",
+        "service_price": 175.00,
+        "service_img": "https://i.ibb.co/yRTs1KS/camera.jpg",
+        "service_description": "Capture every special moment of your party with our professional photography and videography services. Our skilled photographers and video graphers will document the day's highlights, ensuring you have lasting memories to cherish for years to come. From candid shots to beautifully edited videos, we've got your memories covered. Our team uses state-of-the-art equipment and creative techniques to capture the essence of your event."
+    },
+    {
+        "service_id": 7,
+        "service_title": "Invitations and Stationery",
+        "service_price": 45.00,
+        "service_img": "https://i.ibb.co/NtR0VF7/invite-card.jpg",
+        "service_description": "Set the tone for your party with custom-designed invitations and stationery. Our talented designers will create unique and personalized invitations, thank-you cards, and other stationery items that match your chosen theme, adding an extra layer of elegance to your event. We pay attention to every detail, from choosing the perfect paper and fonts to creating designs that leave a lasting impression on your guests."
+    }
+]
+
+// ekta array te sob
+[
+    {
+        "services": [
+            {
+                "service_id": 1,
+                "service_title": "Venue Selection",
+                "service_price": 50.00,
+                "service_img": "https://i.ibb.co/C7gQTVt/Venu.jpg",
+                "service_description": "Choosing the right venue is crucial to the success of your event. Our experienced party planners will work closely with you to select the perfect venue that suits your event's needs and vision. Whether you're planning a wedding, corporate conference, or a milestone birthday party, we'll ensure that the venue sets the stage for a memorable celebration. We take care of every detail, from evaluating available spaces to negotiating contracts and managing logistics, to provide you with the ideal setting for your event."
+            },
+            {
+                "service_id": 2,
+                "service_title": "Decoration Setup",
+                "service_price": 150.00,
+                "service_img": "https://i.ibb.co/GnWfQTg/decoration.jpg",
+                "service_description": "Transform your venue into a stunning and enchanting space with our decoration setup service. Our talented decorators will bring your vision to life, ensuring that every corner is adorned with beautiful and creative decor that matches your chosen theme. From elegant floral arrangements to eye-catching centerpieces, our decorators will create a magical ambiance that wows your guests."
+            },
+            {
+                "service_id": 3,
+                "service_title": "Cake and Catering",
+                "service_price": 200.00,
+                "service_img": "https://i.ibb.co/0VXSpKK/cake.jpg",
+                "service_description": "Indulge your guests with delicious culinary delights. Our expert chefs and bakers will craft mouthwatering cakes, savory dishes, and sweet treats that cater to every palate. From elegant cakes to gourmet meals, we ensure that your guests leave with satisfied taste buds and happy memories. Our catering service includes a variety of menu options, and we can accommodate dietary preferences and restrictions."
+            },
+            {
+                "service_id": 4,
+                "service_title": "Entertainment",
+                "service_price": 100.00,
+                "service_img": "https://i.ibb.co/vdW3sL8/siingers.jpg",
+                "service_description": "Keep the excitement going with our entertainment services. From professional magicians and talented clowns to live bands and interactive games, we have a wide range of entertainment options to engage guests of all ages. Let us add that extra touch of magic and fun to your party. Our entertainers are experienced in captivating audiences and ensuring everyone has a fantastic time."
+            },
+            {
+                "service_id": 6,
+                "service_title": "Photography and Videography",
+                "service_price": 175.00,
+                "service_img": "https://i.ibb.co/yRTs1KS/camera.jpg",
+                "service_description": "Capture every special moment of your party with our professional photography and videography services. Our skilled photographers and video graphers will document the day's highlights, ensuring you have lasting memories to cherish for years to come. From candid shots to beautifully edited videos, we've got your memories covered. Our team uses state-of-the-art equipment and creative techniques to capture the essence of your event."
+            },
+            {
+                "service_id": 7,
+                "service_title": "Invitations and Stationery",
+                "service_price": 45.00,
+                "service_img": "https://i.ibb.co/NtR0VF7/invite-card.jpg",
+                "service_description": "Set the tone for your party with custom-designed invitations and stationery. Our talented designers will create unique and personalized invitations, thank-you cards, and other stationery items that match your chosen theme, adding an extra layer of elegance to your event. We pay attention to every detail, from choosing the perfect paper and fonts to creating designs that leave a lasting impression on your guests."
+            }
+        ]
+    },
+    {
+        "clientReview": [
+            {
+                "name": "John Smith",
+                "img": "john_smith.jpg",
+                "feedback": "I had an amazing time at the festival party organized by this team. The music, food, and atmosphere were fantastic!",
+                "rating": 5
+            },
+            {
+                "name": "Alice Johnson",
+                "img": "alice_johnson.jpg",
+                "feedback": "The festival was a blast! The organizers did an excellent job, and I can't wait to attend the next one.",
+                "rating": 4
+            },
+            {
+                "name": "Michael Davis",
+                "img": "michael_davis.jpg",
+                "feedback": "I've been to many festivals, but this one stood out. Great job on the event planning and execution!",
+                "rating": 5
+            },
+            {
+                "name": "Emily Wilson",
+                "img": "emily_wilson.jpg",
+                "feedback": "The festival party exceeded my expectations. The decorations were stunning, and the entertainment was top-notch.",
+                "rating": 4
+            }
+        ]
+    }
+]
+
+
+
+
+
+// current data
+[
+    {
+        "service_id": 1,
+        "service_title": "Venue Selection",
+        "service_price": 50.00,
+        "service_img": "https://i.ibb.co/C7gQTVt/Venu.jpg",
+        "service_description": "Choosing the right venue is crucial to the success of your event. Our experienced party planners will work closely with you to select the perfect venue that suits your event's needs and vision. Whether you're planning a wedding, corporate conference, or a milestone birthday party, we'll ensure that the venue sets the stage for a memorable celebration. We take care of every detail, from evaluating available spaces to negotiating contracts and managing logistics, to provide you with the ideal setting for your event."
+    },
+    {
+        "service_id": 2,
+        "service_title": "Decoration Setup",
+        "service_price": 150.00,
+        "service_img": "https://i.ibb.co/GnWfQTg/decoration.jpg",
+        "service_description": "Transform your venue into a stunning and enchanting space with our decoration setup service. Our talented decorators will bring your vision to life, ensuring that every corner is adorned with beautiful and creative decor that matches your chosen theme. From elegant floral arrangements to eye-catching centerpieces, our decorators will create a magical ambiance that wows your guests."
+    },
+    {
+        "service_id": 3,
+        "service_title": "Cake and Catering",
+        "service_price": 200.00,
+        "service_img": "https://i.ibb.co/0VXSpKK/cake.jpg",
+        "service_description": "Indulge your guests with delicious culinary delights. Our expert chefs and bakers will craft mouthwatering cakes, savory dishes, and sweet treats that cater to every palate. From elegant cakes to gourmet meals, we ensure that your guests leave with satisfied taste buds and happy memories. Our catering service includes a variety of menu options, and we can accommodate dietary preferences and restrictions."
+    },
+    {
+        "service_id": 4,
+        "service_title": "Entertainment",
+        "service_price": 100.00,
+        "service_img": "https://i.ibb.co/vdW3sL8/siingers.jpg",
+        "service_description": "Keep the excitement going with our entertainment services. From professional magicians and talented clowns to live bands and interactive games, we have a wide range of entertainment options to engage guests of all ages. Let us add that extra touch of magic and fun to your party. Our entertainers are experienced in captivating audiences and ensuring everyone has a fantastic time."
+    },
+    {
+        "service_id": 6,
+        "service_title": "Photography and Videography",
+        "service_price": 175.00,
+        "service_img": "https://i.ibb.co/yRTs1KS/camera.jpg",
+        "service_description": "Capture every special moment of your party with our professional photography and videography services. Our skilled photographers and video graphers will document the day's highlights, ensuring you have lasting memories to cherish for years to come. From candid shots to beautifully edited videos, we've got your memories covered. Our team uses state-of-the-art equipment and creative techniques to capture the essence of your event."
+    },
+    {
+        "service_id": 7,
+        "service_title": "Invitations and Stationery",
+        "service_price": 45.00,
+        "service_img": "https://i.ibb.co/NtR0VF7/invite-card.jpg",
+        "service_description": "Set the tone for your party with custom-designed invitations and stationery. Our talented designers will create unique and personalized invitations, thank-you cards, and other stationery items that match your chosen theme, adding an extra layer of elegance to your event. We pay attention to every detail, from choosing the perfect paper and fonts to creating designs that leave a lasting impression on your guests."
+    }
+]

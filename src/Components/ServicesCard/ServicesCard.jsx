@@ -1,9 +1,10 @@
 import PropTypes from "prop-types"
+import { Link } from "react-router-dom";
 
 
 
 const ServicesCard = ({ services }) => {
-    console.log(services)
+    // console.log(services)
     const { service_title, service_price, service_img, service_description } = services;
     return (
         <div>
@@ -12,11 +13,11 @@ const ServicesCard = ({ services }) => {
                     <img src={service_img} alt={service_title} className="rounded-xl" />
                 </figure>
                 <div className="card-body items-center text-center">
-                    <h2 className="card-title">{service_title}</h2>
-                    <p>{service_description.slice(0,180)}</p>
-                    <p>Price: {service_price}$</p>
-                    <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                    <h2 className="text-2xl font-bold text-slate-800">{service_title}</h2>
+                    <p className=" font-medium text-gray-700">{service_description.slice(0, 180)}</p>
+                    <p className="text-lg font-medium">Price: {service_price}$</p>
+                    <div className="card-actions w-full">
+                        <Link className="btn btn-outline btn-primary w-full">Details</Link>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,7 @@ import About_Us from "../Pages/AbouUs/About_Us";
 import Services from "../Pages/Services/Services";
 import Contact_us from "../Pages/Contact_Us/Contact_us";
 import Error from "../Pages/ErrorPage/Error";
+import Details from "../Components/ServicesCard/Details";
 
 
 
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader:()=>(fetch("/services.json")),
+                loader:()=>(fetch("/allData.json")),
             },
             {
                 path: "/login",
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
                 path:"/contact_us",
                 element:<Contact_us></Contact_us>
             },
+            {
+                path:"/service/:id",
+                element:<Details></Details>,
+                loader:()=>(fetch("/services.json")),
+            }
             
         ]
     },

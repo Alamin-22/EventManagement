@@ -1,4 +1,5 @@
 import Details_of_about from "../../Components/About_Us_FirstSection/Details_of_about";
+import FAQ from "../../Components/FAQ/FAQ";
 import TeamExperts from "../../Components/TeamExperts/TeamExperts";
 import WhyChoose_us from "../../Components/WhyChoseUs/WhyChoose_us";
 import { Link, useLoaderData } from 'react-router-dom';
@@ -26,6 +27,8 @@ const About_Us = () => {
                         team.map(member => <TeamExperts key={member.id} member={member}></TeamExperts>)
                     }
                 </div>
+                {/* FAQ */}
+                <FAQ></FAQ>
 
             </div>
         </div>

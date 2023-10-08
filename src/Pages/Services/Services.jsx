@@ -1,5 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Card from "./Card";
+import ProjectCompleted from "../../Components/ProjectCompleted/ProjectCompleted";
+import PreviousEvent from "../../Components/Galary/PreviousEvent";
 
 const Services = () => {
     const services = useLoaderData();
@@ -13,6 +15,8 @@ const Services = () => {
                     services.map(card => <Card key={card.id} card={card}></Card>)
                 }
             </div>
+            <ProjectCompleted></ProjectCompleted>
+            <PreviousEvent></PreviousEvent>
         </div>
     );
 };

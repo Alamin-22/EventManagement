@@ -8,7 +8,7 @@ const Login = () => {
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className="py-6">Our user-friendly login feature allows registered users to access their accounts quickly and securely. Whether you're an event organizer looking to manage your events or an attendee eager to purchase tickets, simply enter your login credentials – username and password – to gain instant access to your account. We prioritize the security of your information, ensuring a seamless and protected login experience. If you're new to our platform, you can easily sign up to create an account and unlock a world of event management possibilities. Log in today to get started!</p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form className="card-body">

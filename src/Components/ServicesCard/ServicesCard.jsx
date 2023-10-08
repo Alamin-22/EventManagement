@@ -8,7 +8,7 @@ const ServicesCard = ({ services }) => {
     const {id ,service_title, service_price, service_img, service_description } = services;
     return (
         <div>
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card  bg-base-100 shadow-xl">
                 <figure >
                     <img src={service_img} alt={service_title} className="rounded-xl" />
                 </figure>

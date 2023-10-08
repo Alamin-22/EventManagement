@@ -37,7 +37,7 @@ const Home = () => {
                 </div>
             </section>
             {/*  */}
-            <section className="my-16   md:max-w-6xl mx-auto ">
+            <section className="my-16 px-5  md:max-w-6xl mx-auto ">
                 <LastComponent></LastComponent>
             </section>
         </div>

@@ -7,8 +7,8 @@ const Card = ({ card }) => {
     // console.log(card)
 
     return (
-        <div>
-            <div className="card   bg-base-200 shadow-xl">
+        <div className="px-5">
+            <div className="card  bg-base-200 shadow-xl">
                 <figure>
                     <img src={service_img} alt={service_title} className="rounded-xl" />
                 </figure>

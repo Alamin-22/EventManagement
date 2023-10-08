@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "John Smith",
+        "title": "Founder",
+        "img": "https://i.ibb.co/4fk1kXf/Alice.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Emily Johnson",
+        "title": "Event Manager",
+        "img": "https://i.ibb.co/rvF05jy/emily.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Michael Chang",
+        "title": "Event Supervisor",
+        "img": "https://i.ibb.co/hs8H46v/smith.jpg"
+    }
+]

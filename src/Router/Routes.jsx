@@ -8,6 +8,7 @@ import Services from "../Pages/Services/Services";
 import Contact_us from "../Pages/Contact_Us/Contact_us";
 import Error from "../Pages/ErrorPage/Error";
 import Details from "../Components/ServicesCard/Details";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -15,12 +16,12 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <LayOut></LayOut>,
-        errorElement:<Error></Error>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: "/",
                 element: <Home></Home>,
-                loader:()=>(fetch("/allData.json")),
+                loader: () => (fetch("/allData.json")),
             },
             {
                 path: "/login",
@@ -31,25 +32,25 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path:"/about_us",
-                element:<About_Us></About_Us>,
-                loader:()=>(fetch("/team.json"))
+                path: "/about_us",
+                element: <About_Us></About_Us>,
+                loader: () => (fetch("/team.json"))
             },
             {
-                path:"/services",
-                element:<Services></Services>,
-                loader:()=>(fetch("/services.json")),
+                path: "/services",
+                element: <Services></Services>,
+                loader: () => (fetch("/services.json")),
             },
             {
-                path:"/contact_us",
-                element:<Contact_us></Contact_us>
+                path: "/contact_us",
+                element: <Contact_us></Contact_us>
             },
             {
-                path:"/service/:id",
-                element:<Details></Details>,
-                loader:()=>(fetch("/services.json")),
+                path: "/service/:id",
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader: () => (fetch("/services.json")),
             }
-            
+
         ]
     },
 ]);

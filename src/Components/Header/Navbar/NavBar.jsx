@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../Provider/AuthProvider";
+
 const Navbar = () => {
     const NavLinks = <>
 
@@ -7,7 +10,17 @@ const Navbar = () => {
         <li><NavLink to={"/services"}>Services</NavLink></li>
         <li><NavLink to={"/contact_us"}>Contact Us</NavLink></li>
     </>
-    const user = false;
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleLogout = () => {
+        logOut()
+            .then(()=>{
+                
+            })
+            .catch()
+    }
+
+
     return (
         <div>
             <div className="navbar bg-base-200">
@@ -22,7 +35,7 @@ const Navbar = () => {
                     </div>
                     <p className=" text-sm md:text-2xl font-bold">The <span className="text-purple-400">P</span>laning <span className="text-purple-400">Paradise</span></p>
                 </div>
-                    {/* <img className="lg:hidden" src="https://i.ibb.co/Km7S4fg/event.png" alt="" /> */}
+                {/* <img className="lg:hidden" src="https://i.ibb.co/Km7S4fg/event.png" alt="" /> */}
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {NavLinks}
@@ -33,16 +46,16 @@ const Navbar = () => {
                         user ? <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">
-                                    <img src="https://i.ibb.co/y0yrnYQ/1681283571946.jpg" />
+                                    <img src={user.photoURL} />
                                 </div>
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                 <li>
-                                    <button className="btn btn-sm  btn-ghost">Farhan</button>
+                                    <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
 
                                 </li>
                                 <li>
-                                    <button className="btn btn-sm  btn-ghost">Logout</button>
+                                    <button onClick={handleLogout} className="btn btn-sm  btn-ghost">Logout</button>
 
                                 </li>
                             </ul>

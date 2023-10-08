@@ -28,6 +28,8 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error)
+                // const message = error.message
+                swal("Login Failed!", `Please make sure your  Email and Password is correct`, "error");
             })
 
     }

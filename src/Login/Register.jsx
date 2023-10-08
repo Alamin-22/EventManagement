@@ -1,12 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import swal from 'sweetalert';
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 
 const Register = () => {
     const { CreateUser, UpdateProfile } = useContext(AuthContext);
     const navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
 
 
 
@@ -17,9 +19,14 @@ const Register = () => {
         const email = form.get("email");
         const password = form.get("password")
         const name = form.get("name")
+        console.log(password)
+        // password validation
+        if (!/^(?=.*[A-Z])(?=.*[@#$%^&+=!]).{8,}$/.test(password)) {
+            return swal("Error!", `Password should be At least 8 characters, including at least one uppercase letter and at least one special character`, "error");
 
-        // console.log(email, password, displayName,);
+        }
 
+        // create user
         CreateUser(email, password, name)
             .then(res => {
                 UpdateProfile(name)
@@ -31,6 +38,8 @@ const Register = () => {
             })
             .catch(error => {
                 console.log(error)
+                const message = error.message
+                swal("Error!", `${message.slice(10, 50)}`, "error");
             })
 
     }
@@ -57,7 +66,16 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" name="password" placeholder="password" className="input input-bordered" required />
+                            <div>
+                                <input
+                                    type={showPassword ? "text" : "password"}
+                                    name="password" placeholder="password" className="input input-bordered w-full" required />
+                                <span className="absolute right-10 top-80 cursor-pointer" onClick={() => { setShowPassword(!showPassword) }} >
+                                    {
+                                        showPassword ? <AiFillEye className="text-2xl " /> : <AiFillEyeInvisible className="text-2xl " />
+                                    }
+                                </span>
+                            </div>
                         </div>
                         <div className="form-control mt-6">
                             <button type="submit" className="btn btn-primary">Register</button>

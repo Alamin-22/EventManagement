@@ -7,7 +7,7 @@ const TeamExperts = ({ member }) => {
     const { img, title, name } = member;
     return (
         <div>
-            <div className="relative flex w-96 flex-col rounded-xl bg-purple-50 bg-clip-border text-gray-700 shadow-md">
+            <div className="relative flex  flex-col rounded-xl bg-purple-50 bg-clip-border text-gray-700 shadow-md">
                 <div className="relative mx-4 mt-4 h-80 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
                     <img src={img} alt={name} />
                 </div>

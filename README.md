@@ -1,7 +1,7 @@
 # Event Management Website
 ## Name Of The Website: The Planing Paradise
 
-Welcome to the Event Management Website, where you can plan and organize memorable events with ease. Whether you're hosting a wedding, corporate conference, or any special occasion, our platform offers a range of services to make your event a success.
+Welcome to the Event Management Website, where you can plan and organize memorable events with us. Whether you're hosting a wedding, Birthday parties, or any special occasion, our platform offers a range of services to make your event a success.
 
 ## Live site
 
@@ -9,7 +9,7 @@ Welcome to the Event Management Website, where you can plan and organize memorab
 
 ## Features
 
-### 1. Service Listings
+### 1. Service 
 
 - Explore a variety of event services, including venue selection, decoration setup, catering, entertainment, photography, and invitations/stationery.
 - Each service listing provides essential details such as price, image, and a comprehensive description.

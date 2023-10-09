@@ -11,6 +11,7 @@ import Details from "../Components/ServicesCard/Details";
 import PrivateRoute from "./PrivateRoute";
 import Blogs from "../Pages/Blogs/Blogs";
 import BlogCardDetails from "../Pages/Blogs/BlogCardDetails";
+import UpComingEvents from "../Pages/Events/UpComingEvents";
 
 
 
@@ -61,6 +62,11 @@ const router = createBrowserRouter([
                 path: "/blogs/:id",
                 element: <PrivateRoute><BlogCardDetails></BlogCardDetails></PrivateRoute>,
                 loader: () => (fetch("/blogs.json")),
+            },
+            {
+                path: "/events",
+                element: <PrivateRoute><UpComingEvents /></PrivateRoute>,
+                loader: () => (fetch("/comingEvents.json")),
             }
 
         ]

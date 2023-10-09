@@ -4,7 +4,7 @@ const ClientReview = ({ clientReview }) => {
     const { name, img, feedback, postedAgo } = clientReview;
 
     return (
-        <div className=''>
+        <div data-aos="zoom-in" data-aos-duration="2000">
             <div className="w-full h-80 p-4 mb-6 bg-indigo-100 rounded-lg shadow dark:bg-gray-800 sm:inline-block">
                 <div className=" items-start ">
 

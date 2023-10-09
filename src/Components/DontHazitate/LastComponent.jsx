@@ -1,7 +1,7 @@
 
 const LastComponent = () => {
     return (
-        <div>
+        <div data-aos="fade-up" data-aos-duration="2500">
             <div className="hero  min-h-[60vh]  relative rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/80PbcmC/ng.jpg)' }}>
                 <div className="hero-overlay  bg-opacity-80 rounded-xl absolute inset-0"></div>
                 <div className="hero-content  text-center text-white">

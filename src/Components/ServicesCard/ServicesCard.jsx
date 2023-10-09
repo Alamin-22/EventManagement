@@ -7,7 +7,8 @@ const ServicesCard = ({ services }) => {
     // console.log(services)
     const {id ,service_title, service_price, service_img, service_description } = services;
     return (
-        <div>
+        <div data-aos="fade-up"
+        data-aos-duration="1000">
             <div className="card  bg-base-100 shadow-xl">
                 <figure >
                     <img src={service_img} alt={service_title} className="rounded-xl" />

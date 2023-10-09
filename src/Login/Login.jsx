@@ -1,11 +1,12 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import swal from "sweetalert";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 const Login = () => {
-
+    const [showPassword, setShowPassword] = useState(false);
     const { login } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
@@ -51,13 +52,16 @@ const Login = () => {
                                 <input type="email" name="email" placeholder="email" className="input input-bordered" required />
                             </div>
                             <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Password</span>
-                                </label>
-                                <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+                            <div>
+                                <input
+                                    type={showPassword ? "text" : "password"}
+                                    name="password" placeholder="password" className="input input-bordered w-full" required />
+                                <span className="absolute right-10 top-[136px] cursor-pointer" onClick={() => { setShowPassword(!showPassword) }} >
+                                    {
+                                        showPassword ? <AiFillEye className="text-2xl " /> : <AiFillEyeInvisible className="text-2xl " />
+                                    }
+                                </span>
+                            </div>
                             </div>
                             <div className="form-control mt-6">
                                 <button type="submit" className="btn btn-primary">Login</button>

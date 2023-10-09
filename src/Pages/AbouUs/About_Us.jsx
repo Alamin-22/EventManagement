@@ -18,11 +18,12 @@ const About_Us = () => {
                 <p className="text-center my-4 mx-5 font-medium">Experience excellence like never before with our top-tier services for your special event. From meticulous planning to flawless execution, we are dedicated to making your occasion truly memorable. Trust us to deliver the best, because your event deserves nothing less.</p>
                 <div className="max-w-4xl mx-auto">
                     <WhyChoose_us></WhyChoose_us>
-                    <div className="text-center mt-5 ">
+                    <div  className="text-center mt-5 ">
                         <Link to={"/services"} className='btn btn-primary'>Check Our Services</Link>
                     </div>
                 </div>
-                <h1 className="text-2xl text-purple-500 font-bold text-center my-12">Meet Our Expert Team</h1>
+                
+                <h1 data-aos="zoom-in" data-aos-duration="1500" className="text-2xl text-purple-500 font-bold text-center my-12">Meet Our Expert Team</h1>
                 <div className="px-5">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-auto text-center gap-7">
                         {

@@ -29,7 +29,9 @@ const Home = () => {
             </section>
             {/* client Reviews */}
             <section className="md:max-w-6xl mx-auto">
-                <h1 className="text-5xl font-semibold text-center">What Our Client Says</h1>
+                <div data-aos="flip-left" data-aos-duration="3000">
+                    <h1 className="text-5xl font-semibold text-center">What Our Client Says</h1>
+                </div>
                 <div className=" mx-9 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-5 mt-14 ">
                     {
                         ClientReviews.map((clientReview, idz) => <ClientReview key={idz} clientReview={clientReview}></ClientReview>)

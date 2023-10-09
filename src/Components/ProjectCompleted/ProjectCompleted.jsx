@@ -3,7 +3,7 @@ import { BiHappyBeaming } from 'react-icons/bi';
 import { FaPeopleGroup } from 'react-icons/fa6';
 const ProjectCompleted = () => {
     return (
-        <div className="px-5">
+        <div data-aos="fade-up" data-aos-duration="2500" className="px-5">
             <div className="hero  min-h-[50vh] max-w-6xl mx-auto my-10  relative rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/vv6jxP6/bg.jpg)' }}>
                 <div className="hero-overlay  bg-opacity-80 rounded-xl absolute inset-0"></div>
                 <div className="hero-content  text-white">

@@ -5,7 +5,7 @@ Welcome to the Event Management Website, where you can plan and organize memorab
 
 ## Live site
 
-- [Features](#featureasds)
+ - https://assignment-9-596ce.web.app/
 
 ## Features
 

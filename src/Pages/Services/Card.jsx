@@ -7,7 +7,7 @@ const Card = ({ card }) => {
     // console.log(card)
 
     return (
-        <div className="px-5">
+        <div className="">
             <div className="card  bg-base-200 shadow-xl">
                 <figure>
                     <img src={service_img} alt={service_title} className="rounded-xl" />

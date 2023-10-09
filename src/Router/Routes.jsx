@@ -9,6 +9,8 @@ import Contact_us from "../Pages/Contact_Us/Contact_us";
 import Error from "../Pages/ErrorPage/Error";
 import Details from "../Components/ServicesCard/Details";
 import PrivateRoute from "./PrivateRoute";
+import Blogs from "../Pages/Blogs/Blogs";
+import BlogCardDetails from "../Pages/Blogs/BlogCardDetails";
 
 
 
@@ -49,6 +51,16 @@ const router = createBrowserRouter([
                 path: "/service/:id",
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
                 loader: () => (fetch("/services.json")),
+            },
+            {
+                path: "/blogs",
+                element: <PrivateRoute><Blogs></Blogs></PrivateRoute>,
+                loader: () => (fetch("/blogs.json")),
+            },
+            {
+                path: "/blogs/:id",
+                element: <PrivateRoute><BlogCardDetails></BlogCardDetails></PrivateRoute>,
+                loader: () => (fetch("/blogs.json")),
             }
 
         ]

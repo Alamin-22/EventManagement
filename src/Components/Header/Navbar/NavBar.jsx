@@ -3,19 +3,23 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Navbar = () => {
-    const NavLinks = <>
+    const { user, logOut } = useContext(AuthContext)
 
+
+    const NavLinks = <>
         <li><NavLink to={"/"}>Home</NavLink></li>
         <li><NavLink to={"/about_us"}>About Us</NavLink></li>
         <li><NavLink to={"/services"}>Services</NavLink></li>
+        {
+            user&& <li><NavLink to={"/blogs"}>Blogs</NavLink></li>
+        }
         <li><NavLink to={"/contact_us"}>Contact Us</NavLink></li>
     </>
-    const { user, logOut } = useContext(AuthContext)
 
     const handleLogout = () => {
         logOut()
-            .then(()=>{
-                
+            .then(() => {
+
             })
             .catch()
     }
